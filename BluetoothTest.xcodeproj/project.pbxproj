@@ -14,6 +14,7 @@
 		A1928D841B6F6711008B9A0F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1928D831B6F6711008B9A0F /* Images.xcassets */; };
 		A1928D871B6F6711008B9A0F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1928D851B6F6711008B9A0F /* LaunchScreen.xib */; };
 		A1928D931B6F6711008B9A0F /* BluetoothTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1928D921B6F6711008B9A0F /* BluetoothTestTests.m */; };
+		A1928D9D1B6F676A008B9A0F /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1928D9C1B6F676A008B9A0F /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		A1928D8C1B6F6711008B9A0F /* BluetoothTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluetoothTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1928D911B6F6711008B9A0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1928D921B6F6711008B9A0F /* BluetoothTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BluetoothTestTests.m; sourceTree = "<group>"; };
+		A1928D9C1B6F676A008B9A0F /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1928D9D1B6F676A008B9A0F /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		A1928D6A1B6F6710008B9A0F = {
 			isa = PBXGroup;
 			children = (
+				A1928D9C1B6F676A008B9A0F /* CoreBluetooth.framework */,
 				A1928D751B6F6711008B9A0F /* BluetoothTest */,
 				A1928D8F1B6F6711008B9A0F /* BluetoothTestTests */,
 				A1928D741B6F6711008B9A0F /* Products */,
@@ -348,6 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BluetoothTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -358,6 +363,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BluetoothTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
